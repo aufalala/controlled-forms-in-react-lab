@@ -82,6 +82,7 @@ input {
 .bookshelfDiv {
   padding: 10px;
   width: 80%;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
