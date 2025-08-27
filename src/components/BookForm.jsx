@@ -17,6 +17,9 @@ function BookForm({addBook}) {
 
    const handleSubmit = (event) => {
     event.preventDefault();
+    if (!newbooks.title || !newbooks.author) {
+      return
+    }
     addBook(newbooks);
     setNewBooks({title: "", author: ""});
   };
